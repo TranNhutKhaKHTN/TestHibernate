@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 26, 2020 3:19:13 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.Diem" table="diem" catalog="student" optimistic-lock="version">
+        <id name="stt" type="int">
+            <column name="stt" />
+            <generator class="assigned" />
+        </id>
+        <property name="masv" type="string">
+            <column name="Masv" length="45" />
+        </property>
+        <property name="diem" type="java.lang.Float">
+            <column name="Diem" precision="12" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
